@@ -3,80 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RDA Global | Robust Digital Architecture</title>
+    <title>RDA Global | Architecting the Digital Future</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header id="navbar">
+    <header class="header">
         <div class="container nav-container">
-            <div class="logo">
-                <img src="images/rda-global-logo.png" alt="RDA Global Logo" id="main-logo">
+            <a href="#" class="logo">
+                <img src="assets/logo-header.png" alt="RDA Global" class="logo-img">
                 <span>RDA GLOBAL</span>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#brands">Our Brands</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#vision" class="nav-link">Our Vision</a></li>
+                    <li><a href="#ventures" class="nav-link">Ventures</a></li>
+                    <li><a href="#contact" class="btn-primary nav-btn">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Building a <span class="highlight">Robust</span> Digital Future</h1>
-            <p>Empowering communities, driving e-commerce, and engineering next-generation technological solutions.</p>
-            <a href="#brands" class="btn-secondary">Explore Our Ecosystem</a>
-        </div>
-    </section>
-
-    <section id="brands" class="brands-section">
-        <div class="container">
-            <h2 class="section-title">Our Ecosystem</h2>
-            <div class="grid-container">
-                
-                <div class="brand-card">
-                    <div class="card-icon">🤝</div>
-                    <h3>RDA Trust</h3>
-                    <p>Our public charitable initiative focused on community upliftment, transparency, and social welfare.</p>
-                    <a href="https://trust.rdaglobal.in" target="_blank" class="card-link">Visit Trust Website &rarr;</a>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Architecting a <span class="highlight">Robust</span> Digital Future.</h1>
+                <p>The parent entity driving innovation, engineering next-gen solutions, and redefining modern commerce.</p>
+                <div class="hero-btns">
+                    <a href="#ventures" class="btn-primary">Explore Ventures</a>
+                    <a href="#vision" class="btn-secondary">Our Philosophy</a>
                 </div>
+            </div>
+        </section>
 
-                <div class="brand-card">
-                    <div class="card-icon">🛍️</div>
-                    <h3>Trendora</h3>
-                    <p>Redefining modern fashion and lifestyle with premium, high-quality retail experiences.</p>
-                    <span class="badge">Coming Soon</span>
+        <section id="vision" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Our Core Vision</h2>
+                    <p>We build sustainable digital ecosystems that empower businesses and consumers alike.</p>
                 </div>
-
-                <div class="brand-card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Electoner</h3>
-                    <p>Next-generation electronic goods and accessories engineered for the modern world.</p>
-                    <span class="badge">Coming Soon</span>
+                <div class="vision-grid">
+                    <div class="vision-card">
+                        <div class="icon">🚀</div>
+                        <h3>Innovation First</h3>
+                        <p>Pioneering cutting-edge technologies to solve complex challenges.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="icon">🌐</div>
+                        <h3>Global Impact</h3>
+                        <p>Creating scalable solutions with a worldwide reach and influence.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="icon">🛡️</div>
+                        <h3>Robust Foundation</h3>
+                        <p>Building strong, secure, and reliable digital infrastructures.</p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
+        <section id="ventures" class="section-padding section-dark">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Future Ventures</h2>
+                    <p>Expanding our horizon into new digital frontiers.</p>
+                </div>
+                <div class="ventures-grid">
+                    <div class="venture-card">
+                        <div class="venture-content">
+                            <h3>Trendora</h3>
+                            <p class="venture-tag">E-Commerce & Lifestyle</p>
+                            <p>Redefining modern fashion with premium retail experiences.</p>
+                            <span class="coming-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="venture-card">
+                        <div class="venture-content">
+                            <h3>Electoner</h3>
+                            <p class="venture-tag">Consumer Electronics</p>
+                            <p>Next-generation electronic goods engineered for the modern world.</p>
+                            <span class="coming-soon">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo-footer.png" alt="RDA Global" class="footer-logo-img">
+                <p>Robust Digital Architecture for a better tomorrow.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#vision">About</a></li>
+                    <li><a href="#ventures">Ventures</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Headquarters</h4>
+                <p>Bandh Barji, Motipur,<br>Muzaffarpur, Bihar, India</p>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="images/rda-global-logo.png" alt="RDA Global Logo">
-                <h2>RDA GLOBAL</h2>
-                <p>Robust Digital Architecture</p>
-            </div>
-            <div class="footer-info">
-                <p>&copy; 2026 RDA Global. All Rights Reserved.</p>
-                <p>Headquarters: Bandh Barji, Motipur, Muzaffarpur, Bihar</p>
-            </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 RDA Global. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

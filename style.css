@@ -115,8 +115,17 @@ ul {
 }
 
 .logo-img {
-    height: 40px; /* Adjust Logo size here */
+    height: 40px; 
     width: auto;
+    mix-blend-mode: screen; /* Yeh kaale background ko gayab kar dega */
+}
+
+.footer-logo-img {
+    height: 50px;
+    margin-bottom: 20px;
+    mix-blend-mode: screen; /* Yeh kaale background ko gayab kar dega */
+}
+    
 }
 
 .nav-list {

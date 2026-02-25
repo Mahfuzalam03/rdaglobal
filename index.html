@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDA Global | Architecting the Digital Future</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,14 +12,30 @@
     <header class="header">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="assets/logo-header.png" alt="RDA Global" class="logo-img">
-                <span>RDA GLOBAL</span>
+                <img src="assets/logo-header.png" alt="RDA Global Logo" class="logo-img">
+                <span class="brand-name">RDA GLOBAL</span>
             </a>
+            
             <nav class="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#hero" class="nav-link">Home</a></li>
-                    <li><a href="#vision" class="nav-link">Vision</a></li>
-                    <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li> <li><a href="#ventures" class="nav-link">Ventures</a></li>
+                    <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+                    <li><a href="#ventures" class="nav-link">Ventures</a></li>
+                    
+                    <li class="app-launcher">
+                        <button class="app-icon" aria-label="RDA Apps">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <path d="M12 16c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-6 12c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm12 12c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/>
+                            </svg>
+                        </button>
+                        <div class="app-menu">
+                            <a href="https://store.rdaglobal.in" target="_blank" class="app-item"><span class="icon">📥</span><span>Store</span></a>
+                            <a href="https://shop.rdaglobal.in" target="_blank" class="app-item"><span class="icon">🛍️</span><span>Shop</span></a>
+                            <a href="https://cloud.rdaglobal.in" target="_blank" class="app-item"><span class="icon">☁️</span><span>Cloud</span></a>
+                            <a href="https://connect.rdaglobal.in" target="_blank" class="app-item"><span class="icon">📞</span><span>Connect</span></a>
+                        </div>
+                    </li>
+
                     <li><a href="#contact" class="btn-primary nav-btn">Contact Us</a></li>
                 </ul>
             </nav>
@@ -28,47 +44,55 @@
 
     <main>
         <section id="hero" class="hero-section">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <h1>Architecting a <span class="highlight">Robust</span> Digital Future.</h1>
-                <p>Welcome to the RDA Ecosystem. We are building the next generation of independent, secure, and unified digital platforms.</p>
-                <div class="hero-btns">
-                    <a href="#ecosystem" class="btn-primary">Explore Our Ecosystem</a>
-                    <a href="#vision" class="btn-secondary">Our Philosophy</a>
+            <div class="glow-bg"></div> <div class="container hero-content text-center">
+                <div class="badge">Welcome to the future</div>
+                <h1 class="hero-title">Architecting a <span class="text-gradient">Robust</span><br>Digital Future.</h1>
+                <p class="hero-subtitle">The RDA Ecosystem is your unified platform for next-gen apps, secure storage, global commerce, and seamless connectivity.</p>
+                <div class="hero-btns justify-center">
+                    <a href="#ecosystem" class="btn-primary">Explore Ecosystem</a>
+                    <a href="#vision" class="btn-secondary">Our Vision</a>
                 </div>
             </div>
         </section>
 
-        <section id="ecosystem" class="section-padding" style="background-color: #f8f9fa;">
+        <section id="ecosystem" class="section-padding section-dark">
             <div class="container">
-                <div class="section-header text-center">
+                <div class="section-header">
                     <h2>The RDA Ecosystem</h2>
-                    <p>One unified platform. Endless possibilities. Experience true digital independence.</p>
+                    <p>Independent. Secure. Unified.</p>
                 </div>
                 
-                <div class="ecosystem-grid">
-                    <a href="https://store.rdaglobal.in" target="_blank" class="eco-card">
-                        <div class="eco-icon">📥</div>
-                        <h3>RDA Store</h3>
-                        <p>Your portal for downloading next-gen apps and secure software.</p>
+                <div class="bento-grid">
+                    <a href="https://store.rdaglobal.in" target="_blank" class="bento-card bento-large card-store">
+                        <div class="bento-content">
+                            <div class="bento-icon">📥</div>
+                            <h3>RDA Store</h3>
+                            <p>Your ultimate portal for downloading next-generation applications and software without limits.</p>
+                        </div>
                     </a>
 
-                    <a href="https://shop.rdaglobal.in" target="_blank" class="eco-card">
-                        <div class="eco-icon">🛍️</div>
-                        <h3>RDA Shop</h3>
-                        <p>Premium lifestyle, clothing, and RDA signature tech accessories.</p>
+                    <a href="https://shop.rdaglobal.in" target="_blank" class="bento-card card-shop">
+                        <div class="bento-content">
+                            <div class="bento-icon">🛍️</div>
+                            <h3>RDA Shop</h3>
+                            <p>Premium lifestyle and tech.</p>
+                        </div>
                     </a>
 
-                    <a href="https://cloud.rdaglobal.in" target="_blank" class="eco-card">
-                        <div class="eco-icon">☁️</div>
-                        <h3>RDA Cloud</h3>
-                        <p>Secure, private, and encrypted storage for all your photos and files.</p>
+                    <a href="https://cloud.rdaglobal.in" target="_blank" class="bento-card card-cloud">
+                        <div class="bento-content">
+                            <div class="bento-icon">☁️</div>
+                            <h3>RDA Cloud</h3>
+                            <p>Secure, encrypted storage.</p>
+                        </div>
                     </a>
 
-                    <a href="https://connect.rdaglobal.in" target="_blank" class="eco-card">
-                        <div class="eco-icon">📞</div>
-                        <h3>RDA Connect</h3>
-                        <p>Seamlessly sync, manage, and secure your global contacts directory.</p>
+                    <a href="https://connect.rdaglobal.in" target="_blank" class="bento-card bento-wide card-connect">
+                        <div class="bento-content">
+                            <div class="bento-icon">📞</div>
+                            <h3>RDA Connect</h3>
+                            <p>Seamlessly sync, manage, and secure your global contacts directory in one unified space.</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -77,24 +101,20 @@
         <section id="vision" class="section-padding">
             <div class="container">
                 <div class="section-header text-center">
-                    <h2>Our Core Vision</h2>
-                    <p>We build sustainable digital ecosystems that empower businesses and consumers alike.</p>
+                    <h2>Our Philosophy</h2>
                 </div>
-                <div class="vision-grid">
-                    <div class="vision-card">
-                        <div class="icon">🚀</div>
-                        <h3>Innovation First</h3>
-                        <p>Pioneering cutting-edge technologies to solve complex challenges.</p>
+                <div class="vision-flex">
+                    <div class="vision-item">
+                        <h3 class="text-gradient">01. Innovate</h3>
+                        <p>Pioneering cutting-edge technologies to solve complex global challenges.</p>
                     </div>
-                    <div class="vision-card">
-                        <div class="icon">🌐</div>
-                        <h3>Digital Independence</h3>
-                        <p>Creating self-reliant platforms reducing dependency on third-party giants.</p>
+                    <div class="vision-item">
+                        <h3 class="text-gradient">02. Empower</h3>
+                        <p>Creating self-reliant platforms, reducing dependency on third-party giants.</p>
                     </div>
-                    <div class="vision-card">
-                        <div class="icon">🛡️</div>
-                        <h3>Robust Foundation</h3>
-                        <p>Building strong, secure, and reliable digital infrastructures.</p>
+                    <div class="vision-item">
+                        <h3 class="text-gradient">03. Secure</h3>
+                        <p>Building strong, private, and reliable digital infrastructures for everyone.</p>
                     </div>
                 </div>
             </div>
@@ -102,25 +122,25 @@
 
         <section id="ventures" class="section-padding section-dark">
             <div class="container">
-                <div class="section-header text-center">
+                <div class="section-header">
                     <h2>Future Ventures</h2>
-                    <p>Expanding our horizon into new digital and physical frontiers.</p>
+                    <p>Expanding into physical and digital frontiers.</p>
                 </div>
                 <div class="ventures-grid">
                     <div class="venture-card">
                         <div class="venture-content">
+                            <span class="venture-tag">E-Commerce</span>
                             <h3>Trendora</h3>
-                            <p class="venture-tag">E-Commerce & Lifestyle</p>
                             <p>Redefining modern fashion with premium retail experiences.</p>
-                            <span class="coming-soon">Coming Soon</span>
+                            <div class="status-indicator">Coming Soon</div>
                         </div>
                     </div>
                     <div class="venture-card">
                         <div class="venture-content">
+                            <span class="venture-tag">Electronics</span>
                             <h3>Electoner</h3>
-                            <p class="venture-tag">Consumer Electronics</p>
                             <p>Next-generation electronic goods engineered for the modern world.</p>
-                            <span class="coming-soon">Coming Soon</span>
+                            <div class="status-indicator">Coming Soon</div>
                         </div>
                     </div>
                 </div>
@@ -129,13 +149,13 @@
     </main>
 
     <footer id="contact" class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <img src="assets/logo-footer.png" alt="RDA Global" class="footer-logo-img">
-                <p>Robust Digital Architecture for a better tomorrow.</p>
+        <div class="container footer-layout">
+            <div class="footer-info">
+                <img src="assets/logo-footer.png" alt="RDA Global" class="footer-logo">
+                <p>Robust Digital Architecture for a self-reliant tomorrow.</p>
             </div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4>Navigation</h4>
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#ecosystem">Ecosystem</a></li>
@@ -144,10 +164,10 @@
             </div>
             <div class="footer-contact">
                 <h4>Headquarters</h4>
-                <p>Bandh Barji, Motipur,<br>Muzaffarpur, Bihar, India</p>
+                <p>Bandh Barji, Motipur,<br>Muzaffarpur, Bihar - 843111<br>India</p>
             </div>
         </div>
-        <div class="footer-bottom text-center">
+        <div class="footer-bottom">
             <p>&copy; 2026 RDA Global. All Rights Reserved.</p>
         </div>
     </footer>

@@ -94,6 +94,7 @@ ul {
     z-index: 1000;
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     padding: 15px 0;
 }
@@ -117,15 +118,7 @@ ul {
 .logo-img {
     height: 40px; 
     width: auto;
-    mix-blend-mode: screen; /* Yeh kaale background ko gayab kar dega */
-}
-
-.footer-logo-img {
-    height: 50px;
-    margin-bottom: 20px;
-    mix-blend-mode: screen; /* Yeh kaale background ko gayab kar dega */
-}
-    
+    mix-blend-mode: screen;
 }
 
 .nav-list {
@@ -156,23 +149,95 @@ ul {
     width: 100%;
 }
 
+/* --- 9-Dot App Launcher (Google Style) --- */
+.app-launcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.app-icon {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-icon:hover {
+    color: var(--primary-cyan);
+}
+
+.app-menu {
+    position: absolute;
+    top: 180%;
+    right: -20px;
+    width: 280px;
+    background: rgba(10, 15, 29, 0.95);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* Show menu when hovering over the launcher icon */
+.app-launcher:hover .app-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.app-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.app-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--primary-cyan);
+    transform: scale(1.05);
+}
+
+.app-item .icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
 /* --- Hero Section (Banner) --- */
 .hero-section {
     height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
-    /* Placeholder Banner Background - Replace image in assets folder */
     background: url('assets/hero-banner.jpg') no-repeat center center/cover;
     margin-top: -70px; /* To go behind navbar */
 }
 
-/* Dark Overlay on Banner */
 .hero-overlay {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: linear-gradient(to right, rgba(10, 15, 29, 0.9), rgba(10, 15, 29, 0.6));
+    background: linear-gradient(to right, rgba(10, 15, 29, 0.95), rgba(10, 15, 29, 0.7));
     z-index: 1;
 }
 
@@ -199,7 +264,7 @@ ul {
     gap: 20px;
 }
 
-/* --- Vision Section --- */
+/* --- Common Section Headers --- */
 .section-header {
     margin-bottom: 60px;
 }
@@ -221,6 +286,50 @@ ul {
     border-radius: 2px;
 }
 
+/* --- RDA Ecosystem Grid (Dark Theme Adapted) --- */
+.ecosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.eco-card {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.eco-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+    border-color: var(--primary-cyan);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.eco-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.eco-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.eco-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* --- Vision Section --- */
 .vision-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -322,6 +431,7 @@ ul {
 .footer-logo-img {
     height: 50px;
     margin-bottom: 20px;
+    mix-blend-mode: screen;
 }
 
 .footer h4 {
@@ -352,7 +462,8 @@ ul {
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
-    .nav-menu { display: none; } /* Simple hide for now */
+    .nav-list { display: none; } /* Mobile menu design baad me banayenge */
+    .app-launcher { display: none; } /* Hide dropdown on mobile for now */
     .hero-content h1 { font-size: 2.5rem; }
     .hero-btns { flex-direction: column; }
     .footer-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
